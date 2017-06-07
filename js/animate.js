@@ -14,6 +14,7 @@ $portfolioButton.click(function(event) {
 
 const $skills = $(".skills-list li");
 
+$( document ).ready(function() {
 if ($( window ).width() >= 869) {
   $skills.hide();
 
@@ -27,3 +28,4 @@ if ($( window ).width() >= 869) {
     }
   }, 100);
 }
+});
