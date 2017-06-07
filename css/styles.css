@@ -13,12 +13,16 @@ a {
 .active {
   border-bottom: 2px solid #dbcfb0;
 }
+
+body {
+  background-color: #fdfffc;
+}
 /********************
 Header
 *********************/
 
 .wrap {
-  min-height: calc(100vh - 200px);
+  min-height: calc(100vh - 150px);
 }
 
 header {
@@ -76,6 +80,9 @@ header {
   font-size: 0.9em;
 }
 
+.headlines a {
+  color: #fdfffc;
+}
 #main-headline {
   font-size: 1.5em;
   margin-top: 0;
@@ -103,6 +110,15 @@ header {
   padding: 15px 10px;
   color: #dbcfb0;
   text-decoration: none;
+}
+
+.nav-menu a:hover {
+  color: #eae151;
+  color: #fdfffc;
+}
+
+.active:hover {
+  border-bottom: 2px solid #fdfffc;
 }
 
 /********************
@@ -194,7 +210,7 @@ Footer
 
 footer {
   background-color: #7c90a0;
-  margin-top: 100px;
+  margin-top:50px;  /* Adjust .wrap height for sticky footer */
   height: 100px;
 }
 
