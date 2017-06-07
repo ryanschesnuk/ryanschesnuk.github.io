@@ -303,19 +303,22 @@ Media Queries
   }
 
   .header-img {
-    background-position: center;
+    position: static;
+    background-position: top;
     background-size: cover;
     background-attachment: fixed;
     height: calc(100vh - 150px);
+
 
     text-align: right;
   }
 
   .skills-list {
+    position: static;
     display: inline-block;
-    right: 10%;
-    bottom: 50%;
     width: 25%;
+    margin-top: 12%;
+    margin-right: 10%;
     text-align: left;
     background-color: transparent;
   }
