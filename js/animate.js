@@ -1,5 +1,6 @@
 const $portfolioButton = $("#portfolio-button");
 const $root = $("html, body");
+
 const $skills = $(".skills-list li");
 $skills.hide();
 
@@ -22,7 +23,7 @@ if ($( window ).width() >= 869) {
         $skills.eq(i).show("slide", {direction: "right"}, 300);
         i++;
     } else {
-      clearInterval(intevalSkills)
+      clearInterval(intervalSkills)
     }
   }, 100);
 }
