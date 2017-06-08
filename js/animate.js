@@ -1,6 +1,9 @@
 const $portfolioButton = $("#portfolio-button");
 const $root = $("html, body");
+const $skills = $(".skills-list li");
+$skills.hide();
 
+$( document ).ready(function() {
 $portfolioButton.click(function(event) {
   event.preventDefault();
 
@@ -12,12 +15,7 @@ $portfolioButton.click(function(event) {
 	    }, 700, 'swing');
 });
 
-const $skills = $(".skills-list li");
-
-$( document ).ready(function() {
 if ($( window ).width() >= 869) {
-  $skills.hide();
-
   let i = 0;
   let intervalSkills = setInterval(function() {
     if (i < $skills.length) {
