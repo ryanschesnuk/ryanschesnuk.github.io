@@ -191,6 +191,11 @@ Portfolio
   border-bottom: 2px solid #464e47;
 }
 
+.item-skills {
+  font-size: 0.95em;
+  color: #61304B;
+}
+
 .item-img {
   width: 75%;
   border: 2px solid #464e47;
