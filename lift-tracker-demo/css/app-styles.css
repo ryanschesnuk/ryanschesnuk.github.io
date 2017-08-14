@@ -1,0 +1,214 @@
+/*********************************************
+    APP STYLES
+**********************************************/
+
+/***********************
+OUTER CONTROLS AND CONTAINERS
+***********************/
+.parameters {
+  padding: 1em;
+  margin: 0 auto 2.5% auto;
+  width: 70%;
+}
+
+.save-all-btn {
+  float: right;
+  color: white;
+  padding: 15px 20px;
+  background-color: #4F759B;
+  background-color: #4C86A8;
+  border-radius: 2px;
+  border: 2px solid #403D58;
+  box-shadow: 1px 1px 1px 1px #1A090D;
+
+}
+
+
+.schedule {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+/***********************
+        DAY
+***********************/
+.day {
+  display: inline-block;
+  border: 3px solid #363635;
+  border-radius: 5px;
+  padding: 0.5em;
+  position: relative;
+  margin: 0 0.5em;
+  vertical-align: top;
+
+  width: 222px;
+  min-height: 375px;
+}
+
+.day-header {
+  padding-bottom: 1em;
+}
+
+.day-name {
+  text-align: center;
+}
+
+/***********************
+        EXERCISE
+***********************/
+.add-exercise {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  width: 35px;
+}
+
+.add-exercise:hover {
+  border: 2px solid #B0FE76;
+  border-radius: 50%;
+}
+
+.exercise {
+  width: 200px;
+  text-align: left;
+  padding: 0.5em;
+  border: 1px solid blue;
+  border-radius: 5px;
+  font-size: 0.8em;
+  background-color: #B0FE76;
+  box-shadow: 1px 1px 2px 2px #595A4A;
+  margin-bottom: 0.75em;
+
+}
+
+.save-btn {
+  float: right;
+}
+
+.exercise label {
+  border: 1px solid #595A4A;
+  padding: 3px 6px;
+  border-radius: 4px;
+  background-color: #E2F89C;
+  background-color: #E6FAFC;
+}
+
+.exercise-type {
+  margin-bottom: 10px;
+}
+
+.exercise-name {
+  width: 125px;
+  display: block;
+}
+.exercise a {
+  color: black;
+}
+
+.positive-btn,
+.negative-btn {
+  padding: 2px 3px;
+  border: 1px solid #595A4A;
+  border-radius: 5px;
+}
+.positive-btn {
+  background-color: #5CF64A;
+
+
+}
+
+.negative-btn {
+  background-color: #E58C8A;
+}
+
+/*.hide-sets {
+  display: none;
+}*/
+
+/***********************
+        SETS
+***********************/
+.sets-container {
+  width: 100%;
+  padding-bottom: 0.5em;
+}
+.sets-title-container {
+  padding: 1em 0;
+}
+.sets-title {
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.add-new-set,
+.remove-set {
+  float: right;
+}
+
+.set-list {
+  padding-left: 20px;
+  margin-top: 0;
+  clear: both;
+}
+.set-list li {
+  margin-top:10px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  position: relative;
+}
+
+.x-button-link,
+.x-button {
+  display: inline-block;
+
+  vertical-align: middle;
+}
+
+
+.rep-number {
+  width: 30px
+}
+
+.weight-number {
+  width: 40px;
+}
+
+/***********************
+        CARDIO
+***********************/
+
+.cardio-container {
+  padding-top: 0.5em;
+  padding-bottom: 1em;
+}
+.cardio-container label {
+  width: 25px;
+}
+
+.cardio-list {
+  padding-left: 20px;
+}
+.cardio-background {
+  background-color: #D1603D;
+}
+
+.cardio-container p {
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+.time-number {
+  width: 35px;
+  margin-left: 10px;
+  margin-right: 5px;
+}
+
+/***********************
+        CLEARFIX
+***********************/
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}

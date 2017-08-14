@@ -1,0 +1,62 @@
+/****************************
+    Global
+****************************/
+
+* {
+  box-sizing: border-box;
+  /*font-family: 'PT Sans', sans-serif;*/
+  font-family: 'Vollkorn', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+/****************************
+    Header
+****************************/
+header {
+  background-color: #134611;
+  color: white;
+  padding: 1em;
+}
+
+.header-container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#site-name {
+  float: left;
+}
+
+
+.nav-menu {
+  display: inline-block;
+  list-style: none;
+  float: right;
+}
+
+.nav-menu li {
+  display: inline-block;
+}
+
+.nav-menu a {
+  color: white;
+}
+
+
+
+.main-container {
+  min-height: calc(100vh - 200px); /*account for schedule bottom margin */
+}
+
+/****************************
+    Footer
+****************************/
+
+footer {
+  height: 100px;
+  background-color: #134611;
+}
