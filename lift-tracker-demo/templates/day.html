@@ -1,4 +1,4 @@
-<div class="day" ng-controller="exerciseCtrl" ng-repeat="day in days" ng-class="{'today': isToday}">
+<div class="day" ng-controller="exerciseCtrl" ng-repeat="day in days" ng-class="{'today': day.isToday}">
   <div class="day-header">
     <a ng-click="addExercise()" href=""><img src="img/plus-circle.png" class="add-exercise"></a>
     <h2 class="day-name">{{ day.dayName }}</h2>

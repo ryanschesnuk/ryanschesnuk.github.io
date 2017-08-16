@@ -4,6 +4,7 @@ angular.module("liftTrackerApp")
 .controller('mainCtrl', function($scope) {
 
   const currentDate = new Date();
+  const today = new Date();
 
   // Print day name
   function printDateName(day, month, date, year) {
@@ -36,7 +37,8 @@ angular.module("liftTrackerApp")
         "dayName": dayLabels[day],
         "monthName": monthLabels[month],
         "date": date,
-        "year": year
+        "year": year,
+        "isToday": month === today.getMonth() && date === today.getDate() && year === today.getFullYear()
       };
   }
 
@@ -53,7 +55,7 @@ angular.module("liftTrackerApp")
     let dayNumber = date.getDate();
     let year = date.getFullYear();
 
-    let today = new Date();
+
 
     let weekArray = [];
 

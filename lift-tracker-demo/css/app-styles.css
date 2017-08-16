@@ -53,6 +53,14 @@ OUTER CONTROLS AND CONTAINERS
   text-align: center;
 }
 
+.today {
+  border: 3px solid blue;
+}
+
+.today .day-name {
+  color: blue;
+}
+
 /***********************
         EXERCISE
 ***********************/
