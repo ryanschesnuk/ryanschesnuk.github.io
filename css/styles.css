@@ -359,12 +359,13 @@ Media Queries
     margin-right: 10%;
     text-align: left;
     background-color: transparent;
-    display: none;
+  
   }
 
 
   .skills-list li {
     display: block;
+    display: none;
   }
 
   .skills-list h3 {

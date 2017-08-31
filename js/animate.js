@@ -1,21 +1,10 @@
 const $portfolioButton = $("#portfolio-button");
 const $root = $("html, body");
 
-const $headerImg = $(".header-img");
-
-// Get skills list items and hide immediately
 const $skills = $(".skills-list li");
-$skills.hide();
-
-// Create new <ul> to hold skills, override display property
-const $skillsList = $("<ul class='skills-list'></ul>");
-$skillsList.css("display", "inline-block");
-
-$skillsList.append($skills);
-$headerImg.append($skillsList);
-
 
 $( document ).ready(function() {
+  // Auto-scroll to Portfolio
 $portfolioButton.click(function(event) {
   event.preventDefault();
 
@@ -27,6 +16,7 @@ $portfolioButton.click(function(event) {
 	    }, 700, 'swing');
 });
 
+// Skills list animation
 if ($( window ).width() >= 869) {
   let i = 0;
   let intervalSkills = setInterval(function() {
@@ -38,4 +28,15 @@ if ($( window ).width() >= 869) {
     }
   }, 100);
 }
+
+$( window ).resize(function() {
+  if ($( window ).width() >= 869) {
+    $skills.css("display", "block");
+  }
+
+  if ($( window ).width() < 869 ) {
+    $skills.css("display", "inline-block")
+  }
+
+})
 });
