@@ -1,8 +1,19 @@
 const $portfolioButton = $("#portfolio-button");
 const $root = $("html, body");
 
+const $headerImg = $(".header-img");
+
+// Get skills list items and hide immediately
 const $skills = $(".skills-list li");
 $skills.hide();
+
+// Create new <ul> to hold skills, override display property
+const $skillsList = $("<ul class='skills-list'></ul>");
+$skillsList.css("display", "inline-block");
+
+$skillsList.append($skills);
+$headerImg.append($skillsList);
+
 
 $( document ).ready(function() {
 $portfolioButton.click(function(event) {
